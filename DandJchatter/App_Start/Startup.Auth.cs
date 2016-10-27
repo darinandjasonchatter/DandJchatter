@@ -58,11 +58,11 @@ namespace DandJchatter
             //   appId: "",
             //   appSecret: "");
 
-            //app.UseGoogleAuthentication(new GoogleOAuth2AuthenticationOptions()
-            //{
-            //    ClientId = "",
-            //    ClientSecret = ""
-            //});
+            app.UseGoogleAuthentication(new GoogleOAuth2AuthenticationOptions()
+            {
+                ClientId = "893940414501-opn7mgh5ipqdbhp51pdtcvql2090lac4.apps.googleusercontent.com",
+                ClientSecret = "L0aSI7KuWHyxMtZAi67e-aOW"
+            });
         }
     }
 }
