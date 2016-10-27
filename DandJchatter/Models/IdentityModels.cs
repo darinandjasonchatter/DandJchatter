@@ -16,6 +16,7 @@ namespace DandJchatter.Models
             // Add custom user claims here
             return userIdentity;
         }
+
     }
 
     public class ApplicationDbContext : IdentityDbContext<ApplicationUser>
@@ -29,5 +30,7 @@ namespace DandJchatter.Models
         {
             return new ApplicationDbContext();
         }
+
+        public System.Data.Entity.DbSet<DandJchatter.Models.Post> Posts { get; set; }
     }
 }

@@ -81,3 +81,8 @@ c:\Users\WeCanCodeIT\Documents\Visual Studio 2015\Projects\DandJchatter\DandJcha
 c:\Users\WeCanCodeIT\Documents\Visual Studio 2015\Projects\DandJchatter\DandJchatter\obj\Debug\DandJchatter.csprojResolveAssemblyReference.cache
 c:\Users\WeCanCodeIT\Documents\Visual Studio 2015\Projects\DandJchatter\DandJchatter\obj\Debug\DandJchatter.dll
 c:\Users\WeCanCodeIT\Documents\Visual Studio 2015\Projects\DandJchatter\DandJchatter\obj\Debug\DandJchatter.pdb
+c:\Users\WeCanCodeIT\Documents\Visual Studio 2015\Projects\DandJchatter\DandJchatter\obj\Debug\DandJchatter.Migrations.InitialCreate.resources
+c:\Users\WeCanCodeIT\Documents\Visual Studio 2015\Projects\DandJchatter\DandJchatter\obj\Debug\DandJchatter.csproj.GenerateResource.Cache
+c:\Users\WeCanCodeIT\Documents\Visual Studio 2015\Projects\DandJchatter\DandJchatter\obj\Debug\DandJchatter.Migrations.AddPost.resources
+c:\Users\WeCanCodeIT\Documents\Visual Studio 2015\Projects\DandJchatter\DandJchatter\obj\Debug\DandJchatter.Migrations.ChangedPostModel.resources
+c:\Users\WeCanCodeIT\Documents\Visual Studio 2015\Projects\DandJchatter\DandJchatter\obj\Debug\DandJchatter.Migrations.CreatedPostController.resources

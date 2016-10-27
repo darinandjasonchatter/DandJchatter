@@ -171,12 +171,31 @@
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
+    <Compile Include="Controllers\PostsController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201610271555355_InitialCreate.cs" />
+    <Compile Include="Migrations\201610271555355_InitialCreate.Designer.cs">
+      <DependentUpon>201610271555355_InitialCreate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201610271832529_AddPost.cs" />
+    <Compile Include="Migrations\201610271832529_AddPost.Designer.cs">
+      <DependentUpon>201610271832529_AddPost.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201610271857522_ChangedPostModel.cs" />
+    <Compile Include="Migrations\201610271857522_ChangedPostModel.Designer.cs">
+      <DependentUpon>201610271857522_ChangedPostModel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201610271941285_CreatedPostController.cs" />
+    <Compile Include="Migrations\201610271941285_CreatedPostController.Designer.cs">
+      <DependentUpon>201610271941285_CreatedPostController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
+    <Compile Include="Models\Post.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
   </ItemGroup>
@@ -249,6 +268,11 @@
     <Content Include="Views\Manage\VerifyPhoneNumber.cshtml" />
     <Content Include="Views\Shared\Lockout.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
+    <Content Include="Views\Posts\Create.cshtml" />
+    <Content Include="Views\Posts\Delete.cshtml" />
+    <Content Include="Views\Posts\Details.cshtml" />
+    <Content Include="Views\Posts\Edit.cshtml" />
+    <Content Include="Views\Posts\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -258,6 +282,20 @@
     <None Include="Project_Readme.html" />
     <Content Include="Scripts\jquery-3.1.1.slim.min.map" />
     <Content Include="Scripts\jquery-3.1.1.min.map" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201610271555355_InitialCreate.resx">
+      <DependentUpon>201610271555355_InitialCreate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201610271832529_AddPost.resx">
+      <DependentUpon>201610271832529_AddPost.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201610271857522_ChangedPostModel.resx">
+      <DependentUpon>201610271857522_ChangedPostModel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201610271941285_CreatedPostController.resx">
+      <DependentUpon>201610271941285_CreatedPostController.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
