@@ -191,6 +191,10 @@
     <Compile Include="Migrations\201610271941285_CreatedPostController.Designer.cs">
       <DependentUpon>201610271941285_CreatedPostController.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201610281456320_NewStuffForUserIO.cs" />
+    <Compile Include="Migrations\201610281456320_NewStuffForUserIO.Designer.cs">
+      <DependentUpon>201610281456320_NewStuffForUserIO.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\IdentityModels.cs" />
@@ -295,6 +299,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201610271941285_CreatedPostController.resx">
       <DependentUpon>201610271941285_CreatedPostController.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201610281456320_NewStuffForUserIO.resx">
+      <DependentUpon>201610281456320_NewStuffForUserIO.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

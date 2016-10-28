@@ -7,6 +7,8 @@ using System.Net;
 using System.Web;
 using System.Web.Mvc;
 using DandJchatter.Models;
+using Microsoft.AspNet.Identity;
+using Microsoft.AspNet.Identity.EntityFramework;
 
 namespace DandJchatter.Controllers
 {
@@ -15,8 +17,25 @@ namespace DandJchatter.Controllers
         private ApplicationDbContext db = new ApplicationDbContext();
 
         // GET: Posts
+        [AllowAnonymous]
         public ActionResult Index()
         {
+            if (Request.IsAuthenticated)
+            {
+                UserManager<ApplicationUser> UserManager = new UserManager<ApplicationUser>(new UserStore<ApplicationUser>(db));
+                ApplicationUser currentUser = UserManager.FindById(User.Identity.GetUserId());
+
+                // assuming there is some kind of relationship between products and users
+                List<Post> posts = db.Posts.Where(p => p.User.Equals(currentUser.UserID)).ToList(); // or .email or other field from your users table
+
+                // OPTIONAL: Make sure they see something
+                if (posts.Count == 0) // They have no related products so just send all of them
+                    posts = db.Posts.ToList();
+
+                // only send the products related to that user
+                return View(posts);
+            }
+            // User is not authenticated, send them all products
             return View(db.Posts.ToList());
         }
 
@@ -38,8 +57,16 @@ namespace DandJchatter.Controllers
         // GET: Posts/Create
         public ActionResult Create()
         {
-            return View();
+            if (Request.IsAuthenticated== false)
+            {
+                return HttpNotFound();
+            }
+            else
+            { 
+                return View();
+            }
         }
+        
 
         // POST: Posts/Create
         // To protect from overposting attacks, please enable the specific properties you want to bind to, for 

@@ -86,3 +86,4 @@ c:\Users\WeCanCodeIT\Documents\Visual Studio 2015\Projects\DandJchatter\DandJcha
 c:\Users\WeCanCodeIT\Documents\Visual Studio 2015\Projects\DandJchatter\DandJchatter\obj\Debug\DandJchatter.Migrations.AddPost.resources
 c:\Users\WeCanCodeIT\Documents\Visual Studio 2015\Projects\DandJchatter\DandJchatter\obj\Debug\DandJchatter.Migrations.ChangedPostModel.resources
 c:\Users\WeCanCodeIT\Documents\Visual Studio 2015\Projects\DandJchatter\DandJchatter\obj\Debug\DandJchatter.Migrations.CreatedPostController.resources
+C:\Users\WeCanCodeIT\Documents\Visual Studio 2015\Projects\DandJchatter\DandJchatter\obj\Debug\DandJchatter.Migrations.NewStuffForUserIO.resources

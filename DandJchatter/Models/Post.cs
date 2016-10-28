@@ -14,7 +14,10 @@ namespace DandJchatter.Models
         public string Chat { get; set; }
         public DateTime TimeOfChat { get; set; }
 
+
         public virtual ApplicationUser ApplicationUser { get; set;}
+        public ApplicationUser UserName { get; }
+        public object User { get; internal set; }
         //[ForeignKey("AspNetUsers")]
         //public string ID { get; set; }
         //public string UserName { get; set; }
