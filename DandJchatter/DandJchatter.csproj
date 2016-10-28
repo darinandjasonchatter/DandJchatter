@@ -195,6 +195,10 @@
     <Compile Include="Migrations\201610281456320_NewStuffForUserIO.Designer.cs">
       <DependentUpon>201610281456320_NewStuffForUserIO.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201610281717231_CreateAccountPage.cs" />
+    <Compile Include="Migrations\201610281717231_CreateAccountPage.Designer.cs">
+      <DependentUpon>201610281717231_CreateAccountPage.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\IdentityModels.cs" />
@@ -277,6 +281,7 @@
     <Content Include="Views\Posts\Details.cshtml" />
     <Content Include="Views\Posts\Edit.cshtml" />
     <Content Include="Views\Posts\Index.cshtml" />
+    <Content Include="Views\Posts\CreateAccount.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -302,6 +307,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201610281456320_NewStuffForUserIO.resx">
       <DependentUpon>201610281456320_NewStuffForUserIO.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201610281717231_CreateAccountPage.resx">
+      <DependentUpon>201610281717231_CreateAccountPage.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

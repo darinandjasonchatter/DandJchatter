@@ -59,14 +59,14 @@ namespace DandJchatter.Controllers
         {
             if (Request.IsAuthenticated== false)
             {
-                return HttpNotFound();
+                return View("CreateAccount");
             }
             else
             { 
                 return View();
             }
         }
-        
+       
 
         // POST: Posts/Create
         // To protect from overposting attacks, please enable the specific properties you want to bind to, for 
