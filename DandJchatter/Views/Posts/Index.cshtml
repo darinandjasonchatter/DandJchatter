@@ -4,12 +4,12 @@
     ViewBag.Title = "Index";
 }
 
-<h2>Index</h2>
+@*<h2>Index</h2>*@
 
 <p>
-    @Html.ActionLink("Create New", "Create")
+    @Html.ActionLink("Chatter!", "Create")
 </p>
-<table class="table">
+@*<table class="table">
     <tr>
         <th>
             @Html.DisplayNameFor(model => model.ApplicationUser.UserName)
@@ -21,25 +21,27 @@
             @Html.DisplayNameFor(model => model.TimeOfChat)
         </th>
         <th></th>
-    </tr>
+    </tr>*@
 
-@foreach (var item in Model) {
-    <tr>
-        <th>
-            @Html.DisplayFor(model => item.ApplicationUser.UserName)
-        </th>
-        <td>
-            @Html.DisplayFor(modelItem => item.Chat)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.TimeOfChat)
-        </td>
-        <td>
-            @Html.ActionLink("Edit", "Edit", new { id=item.PostID }) |
-            @Html.ActionLink("Details", "Details", new { id=item.PostID }) |
-            @Html.ActionLink("Delete", "Delete", new { id=item.PostID })
-        </td>
-    </tr>
+@foreach (var item in Model)
+{
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-6 col-md-4" id="centerPost">
+                <div class="center-block">
+                    @Html.DisplayFor(model => item.ApplicationUser.Email)
+                    <span id="postText">@Html.DisplayFor(modelItem => item.Chat)</span>
+                    <p>
+                    @Html.DisplayFor(modelItem => item.TimeOfChat)
+                    <br/>
+                    @Html.ActionLink("Edit", "Edit", new { id = item.PostID })
+                    @*@Html.ActionLink("Details", "Details", new { id = item.PostID })*@
+                    @Html.ActionLink("Delete", "Delete", new { id = item.PostID })
+                </p>
+                </div>
+            </div>
+        </div>
+    </div>
 }
 
-</table>
+
