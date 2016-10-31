@@ -3,6 +3,7 @@ using System.Security.Claims;
 using System.Threading.Tasks;
 using Microsoft.AspNet.Identity;
 using Microsoft.AspNet.Identity.EntityFramework;
+using System.Collections.Generic;
 
 namespace DandJchatter.Models
 {
@@ -18,7 +19,8 @@ namespace DandJchatter.Models
             // Add custom user claims here
             return userIdentity;
         }
-
+        public ICollection<ApplicationUser> Followers { get; set; }
+        public ICollection<ApplicationUser> Following { get; set; }
     }
 
     public class ApplicationDbContext : IdentityDbContext<ApplicationUser>
@@ -32,7 +34,15 @@ namespace DandJchatter.Models
         {
             return new ApplicationDbContext();
         }
-
+        protected override void OnModelCreating(DbModelBuilder modelBuilder)
+        {
+            modelBuilder.Entity<ApplicationUser>()
+                .HasMany(x => x.Followers).WithMany(x => x.Following)
+                .Map(x => x.ToTable("Followers")
+                    .MapLeftKey("UserId")
+                    .MapRightKey("FollowerId"));
+            base.OnModelCreating(modelBuilder);
+        }
         public System.Data.Entity.DbSet<DandJchatter.Models.Post> Posts { get; set; }
     }
 }
