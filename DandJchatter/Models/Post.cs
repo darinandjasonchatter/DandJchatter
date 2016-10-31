@@ -11,7 +11,9 @@ namespace DandJchatter.Models
     {
         [Key]
         public int PostID { get; set; }
+        [StringLength(150)]
         public string Chat { get; set; }
+        [Display(Name = "Date")]
         public DateTime TimeOfChat { get; set; }
 
 

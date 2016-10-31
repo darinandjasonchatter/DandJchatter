@@ -37,8 +37,6 @@ body{
 /*^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ CODE THAT WAS HOMEPAGE ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^*/
 #centerPost{
     text-align:center;
-    margin-left: auto ;
-    margin-right: auto ;
 }
 #postText{
     font-size:30px;
