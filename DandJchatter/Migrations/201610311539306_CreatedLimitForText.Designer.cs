@@ -7,13 +7,13 @@ namespace DandJchatter.Migrations
     using System.Resources;
     
     [GeneratedCode("EntityFramework.Migrations", "6.1.3-40302")]
-    public sealed partial class AddStuff : IMigrationMetadata
+    public sealed partial class CreatedLimitForText : IMigrationMetadata
     {
-        private readonly ResourceManager Resources = new ResourceManager(typeof(AddStuff));
+        private readonly ResourceManager Resources = new ResourceManager(typeof(CreatedLimitForText));
         
         string IMigrationMetadata.Id
         {
-            get { return "201610311514338_AddStuff"; }
+            get { return "201610311539306_CreatedLimitForText"; }
         }
         
         string IMigrationMetadata.Source

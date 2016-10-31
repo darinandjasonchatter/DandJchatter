@@ -199,9 +199,9 @@
     <Compile Include="Migrations\201610281717231_CreateAccountPage.Designer.cs">
       <DependentUpon>201610281717231_CreateAccountPage.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201610311514338_AddStuff.cs" />
-    <Compile Include="Migrations\201610311514338_AddStuff.Designer.cs">
-      <DependentUpon>201610311514338_AddStuff.cs</DependentUpon>
+    <Compile Include="Migrations\201610311539306_CreatedLimitForText.cs" />
+    <Compile Include="Migrations\201610311539306_CreatedLimitForText.Designer.cs">
+      <DependentUpon>201610311539306_CreatedLimitForText.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
@@ -316,8 +316,8 @@
     <EmbeddedResource Include="Migrations\201610281717231_CreateAccountPage.resx">
       <DependentUpon>201610281717231_CreateAccountPage.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201610311514338_AddStuff.resx">
-      <DependentUpon>201610311514338_AddStuff.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201610311539306_CreatedLimitForText.resx">
+      <DependentUpon>201610311539306_CreatedLimitForText.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
