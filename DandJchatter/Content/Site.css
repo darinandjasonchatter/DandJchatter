@@ -28,8 +28,11 @@ textarea {
 }
 .glyphicon{
     font-size:90px;
-    transform: rotate(25deg);
+    transform: rotate(29deg);
     word-wrap:break-word;
+}
+body{
+    background-color:lightgray;
 }
 /*^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ CODE THAT WAS HOMEPAGE ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^*/
 #centerPost{
@@ -39,4 +42,9 @@ textarea {
 }
 #postText{
     font-size:30px;
+}
+.center-block{
+    box-shadow: 6px 6px 8px #888888;
+    margin-bottom:10px;
+    background-color:white;
 }
