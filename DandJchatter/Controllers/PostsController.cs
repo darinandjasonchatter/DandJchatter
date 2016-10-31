@@ -26,7 +26,7 @@ namespace DandJchatter.Controllers
                 ApplicationUser currentUser = UserManager.FindById(User.Identity.GetUserId());
 
                 // assuming there is some kind of relationship between products and users
-                List<Post> posts = db.Posts.Where(p => p.User.Equals(currentUser.UserID)).ToList(); // or .email or other field from your users table
+                List<Post> posts = db.Posts.Where(p => p.ApplicationUser.Equals(currentUser.UserID)).ToList(); // or .email or other field from your users table
 
                 // OPTIONAL: Make sure they see something
                 if (posts.Count == 0) // They have no related products so just send all of them
